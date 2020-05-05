@@ -6,8 +6,8 @@ from .forms import CityForm
 def index(request):
     if request.method == 'POST':
         name=request.POST['name']
-        url='http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=7a8618643ee6526d166d5d1c82a7320c'
-        #url='http://api.openweathermap.org/data/2.5/forecast?q={}&units=metric&appid=7a8618643ee6526d166d5d1c82a7320c'
+        url='http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid={use api id here}'
+        #url='http://api.openweathermap.org/data/2.5/forecast?q={}&units=metric&appid='
         r = requests.get(url.format(name)).json()
         print(r)
         city_weather = {
