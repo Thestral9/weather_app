@@ -1,4 +1,4 @@
-currently in construction .
+Currently in construction .
 
-# weather_app
-A simple Weather app using api of openweathermap to get the weather details of current day.
+# Weather App
+A clean weather app using the simple, fast and free weather API from OpenWeatherMap to get the weather details of current day at your location.
